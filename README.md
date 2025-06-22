@@ -1,6 +1,6 @@
 # 🛡️ PayPal Fraud Detection 
 
-A **real-time machine learning system** for detecting fraudulent transactions with 92%+ accuracy. MLOps solution with FastAPI, feature engineering, and action recommendations.
+A **real-time machine learning system** for detecting fraudulent transactions. MLOps solution with FastAPI, feature engineering, and action recommendations.
 
 ## 🚀 Quick Start
 
