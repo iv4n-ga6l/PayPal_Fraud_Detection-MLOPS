@@ -596,7 +596,7 @@ def main():
             st.success("🟢 Online")
         else:
             st.error("🔴 Offline")
-            st.markdown("Start API with: `python app/main.py`")
+            st.markdown("Start API with: `python start_server.py`")
         
         # System Info
         st.markdown("### System Info")
