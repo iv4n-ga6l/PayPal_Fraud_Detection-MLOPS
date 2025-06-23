@@ -131,7 +131,7 @@ class FeatureEngineer:
             DataFrame with engineered transaction features
         """
         df = transactions_df.copy()
-          # Basic transaction features
+        # Basic transaction features
         df['amount_usd_log'] = np.log1p(df['amount_usd'])
         df['is_crypto'] = df['is_crypto'].astype(int) if 'is_crypto' in df.columns else 0
         

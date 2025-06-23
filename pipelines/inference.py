@@ -466,33 +466,3 @@ class FraudDetectionInference:
         health_status['overall_healthy'] = all(health_status.values())
         
         return health_status
-
-
-# Example usage functions
-def create_example_prediction():
-    """Create an example prediction for testing."""
-    # Example user data
-    user_data = {
-        'id': 'test-user-123',
-        'has_email': 1,
-        'phone_country': 'GB',
-        'country': 'GB',
-        'birth_year': 1990,
-        'kyc': 'PASSED',
-        'failed_sign_in_attempts': 0
-    }
-    
-    # Example transaction data
-    transaction_data = {
-        'id': 'test-txn-456',
-        'user_id': 'test-user-123',
-        'amount_usd': 250,
-        'currency': 'GBP',
-        'type': 'CARD_PAYMENT',
-        'merchant_category': 'restaurant',
-        'entry_method': 'chip',
-        'source': 'GAIA',
-        'is_crypto': False
-    }
-    
-    return user_data, transaction_data

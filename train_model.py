@@ -32,7 +32,6 @@ logger = logging.getLogger(__name__)
 
 
 def main():
-    """Main training function with command line interface."""
     parser = argparse.ArgumentParser(description='Train PayPal fraud detection models')
     
     parser.add_argument(
@@ -154,19 +153,6 @@ def main():
         
         logger.info(f"\nModel registry: {args.models_dir}/model_registry.pkl")
         logger.info(f"Training completed at: {datetime.now()}")
-        
-        # Quick start instructions
-        logger.info("\n" + "=" * 60)
-        logger.info("QUICK START INSTRUCTIONS")
-        logger.info("=" * 60)
-        logger.info("To start the API server:")
-        logger.info("  python app/main.py")
-        logger.info("")
-        logger.info("To test predictions:")
-        logger.info("  python pipelines/inference.py")
-        logger.info("")
-        logger.info("To run the demo app:")
-        logger.info("  streamlit run demo.py")
         
         return results
         
